@@ -1,25 +1,25 @@
 class Ratect < Formula
   desc "The forward-looking Ratect CLI, free to diverge from Batect's interface"
   homepage "https://github.com/or1can/ratect"
-  version "0.8.0"
+  version "0.9.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/or1can/ratect/releases/download/ratect/v0.8.0/ratect-aarch64-apple-darwin.tar.xz"
-      sha256 "840665010667b8200f24a6a2981f2bbc578f09af40230d63dde9f28bed6cf592"
+      url "https://github.com/or1can/ratect/releases/download/ratect/v0.9.0/ratect-aarch64-apple-darwin.tar.xz"
+      sha256 "2882c54a52cd6ab0c95e63347946c294678ffd31cf1ad54dd06068ff48ed3842"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/or1can/ratect/releases/download/ratect/v0.8.0/ratect-x86_64-apple-darwin.tar.xz"
-      sha256 "46f945b9c010fe065f4b2403a383b018c94abd0a7a4b556797576505cf69335b"
+      url "https://github.com/or1can/ratect/releases/download/ratect/v0.9.0/ratect-x86_64-apple-darwin.tar.xz"
+      sha256 "afbf327d4f3a653b156e5a4560bc3d1f24d6bb2be34e2b427131d6572f0d97c4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/or1can/ratect/releases/download/ratect/v0.8.0/ratect-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "1e3cd6f88e54829a22b0b0169d4b96d598d0c2f12d0e0eb7f9e21ffdda8b01ad"
+      url "https://github.com/or1can/ratect/releases/download/ratect/v0.9.0/ratect-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "cafc60daebd212b432f6ede3af1b36ce2d195f73931c1e119b065206c56a319a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/or1can/ratect/releases/download/ratect/v0.8.0/ratect-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "dbbf14560709fc9bd179599c537932e2c72a7bf53c7b44a1b56ed0896dc42660"
+      url "https://github.com/or1can/ratect/releases/download/ratect/v0.9.0/ratect-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2e6e9e87bcc72e2006fc8d90cfbe14814898c307bf3c24e418c9d1597266bce2"
     end
   end
   license "Apache-2.0"
