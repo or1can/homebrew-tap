@@ -1,25 +1,25 @@
 class RatectCompat < Formula
   desc "A strict, flag-for-flag and field-for-field drop-in replacement for the (now-unmaintained) batect binary"
   homepage "https://github.com/or1can/ratect"
-  version "0.32.0"
+  version "0.33.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/or1can/ratect/releases/download/ratect-compat/v0.32.0/ratect-compat-aarch64-apple-darwin.tar.xz"
-      sha256 "2904ba54085df42c7f08e28cbf87fe66c0a7543a1c80ccffdf3526ab65a7f668"
+      url "https://github.com/or1can/ratect/releases/download/ratect-compat/v0.33.0/ratect-compat-aarch64-apple-darwin.tar.xz"
+      sha256 "e23bd73a5a3f82cea87b46fe5027c064cd7b1c0fd479bb3ac9d80aed31c5fd95"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/or1can/ratect/releases/download/ratect-compat/v0.32.0/ratect-compat-x86_64-apple-darwin.tar.xz"
-      sha256 "697818264ea2c548f428b375e68e62c39aa4444c74a42a5e3ecaf397096e84ee"
+      url "https://github.com/or1can/ratect/releases/download/ratect-compat/v0.33.0/ratect-compat-x86_64-apple-darwin.tar.xz"
+      sha256 "bc6f6278a37fbf85a8543ef4a78db2001d9a6fb00c3afbd2b8d356202a80f02c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/or1can/ratect/releases/download/ratect-compat/v0.32.0/ratect-compat-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "61ae5d3d3eda139b730a2f14abbbdc3a0e74bb67fa034b3fcd0fa093b990d1aa"
+      url "https://github.com/or1can/ratect/releases/download/ratect-compat/v0.33.0/ratect-compat-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "0ca097ebd14d0452f545aad9d805c196733b3ea7831af4faa7a158a6cd5f198e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/or1can/ratect/releases/download/ratect-compat/v0.32.0/ratect-compat-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "60c20f8fd66301ca6fb1882208650b2152f8a62ed0646706f94fc860bd080976"
+      url "https://github.com/or1can/ratect/releases/download/ratect-compat/v0.33.0/ratect-compat-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ed3546f8586eb97d59f9422c489bd2ff021a08e94a022efb536379bb75a24289"
     end
   end
   license "Apache-2.0"
